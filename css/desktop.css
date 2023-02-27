@@ -1,0 +1,361 @@
+/* IMPORTING FONTS TYPEFACES AND FONTS GOOGLE FONTS */
+
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400;1,500;1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Frank+Ruhl+Libre:wght@300;400;500;700&display=swap');
+
+/* FONTS USED IN THE SITE */
+
+/* font-family: 'DM Serif Display', serif; */
+/* font-family: 'Frank Ruhl Libre', serif; */
+/* font-family: 'Raleway', sans-serif; */
+
+/* Creating Varibales */
+:root {
+    --color-coffee: #221806;
+    --color-frenchvanilla: #b9b0ab;
+    --color-hotchocolate: #342d25;
+    --color-brown-lt: #4b4840;
+    --color-cream: #f8f5e5;
+    --color-cream-lt: #f2f1ec;
+}
+
+/* GLOBAL STYLING */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    cursor: default;
+}
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: var(--color-cream);
+}
+
+/* Creating custom styles for Heading Tags */
+h1,
+h2,
+h3,
+h4 {
+    font-family: 'Frank Ruhl Libre', serif;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+h1::selection {
+    background: var(--color-brown-lt);
+    color: var(--color-cream);
+}
+h1 { font-size: 44px; }
+h2 { font-size: 40px; }
+h3 { font-size: 36px; }
+h4 { font-size: 32px; }
+h5 { font-size: 26px; }
+h6 { font-size: 22px; }
+p { font-size: 110%; }
+ul { list-style: none; }
+
+/* Global Container and Custom Heading Sizes */
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.section-heading {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+/* ------------------------- */
+/* SECTION: NAV BAR - HEADER */
+/* ------------------------- */
+
+.logo {
+    font-size: 32px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    margin: 10px 0;
+    color: var(--color-cream-lt);
+}
+.navbar {
+    background-color: var(--color-coffee);
+    color: var(--color-coffee);
+}
+.navbar a {
+    text-decoration: none;
+    color: var(--color-cream);
+    font-family: 'Frank Ruhl Libre', serif;
+    font-size: 18px;
+    font-weight: 500;
+    transition: 0.2s ease-out;
+    padding-bottom: 3px;
+}
+.navbar a:hover {
+    border-bottom: 2px solid var(--color-cream);
+    border-radius: 5%;
+}
+/* Using flex for Logo and Navbar */
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+/* Using flex for Navbar Elements */
+.navbar ul {
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 20px;
+}
+.header h1{
+    transition: all .2s ease-in-out;
+}
+.header h1:hover{
+    transform: skew(-12deg) scale(1.02);
+}
+
+/* --------------- */
+/* SECTION: FOOTER */
+/* --------------- */
+
+footer {
+    background-color: var(--color-coffee);
+    color: white;
+    text-align: center;
+    padding: 20px 0 40px 0;
+    position: static;
+    bottom: 0px;
+}
+footer a {
+    text-decoration: none;
+    color: var(--color-frenchvanilla);
+    cursor: alias;
+}
+footer p {
+    padding-bottom: 2px;
+}
+.logofooter {
+    font-size: 40px;
+    font-family: 'DM Serif Display', serif;
+    font-weight: bold;
+    font-style: italic;
+    color: var(--color-cream-lt);
+}
+
+
+/* ---------------------- */
+/* SECTION: JUST LAUNCHED */
+/* ---------------------- */
+
+.header {
+    color: var(--color-coffee);
+    line-height: 1.2;
+    padding: 30px 0 0 0;
+}
+.header img {
+    max-width: 280px;
+    padding-bottom: 50px;
+    margin-right: 20px;
+}
+/* Using flex for Main Content: Heading and Image  */
+.header .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px auto;
+}
+.header p {
+    margin-top: 12px;
+    line-height: 1.2;
+    margin-bottom: 50px;
+}
+
+/* ------------------------- */
+/* SECTION: VALUES AND MISSION */
+/* ------------------------- */
+.generic-text {
+    text-align: center;
+    line-height: 1.5;
+    margin-bottom: 70px;
+}
+.generic-text p {
+    padding: 0 100px;
+}
+
+/* ----------------------- */
+/* SECTION: BG IMAGE BREAK */
+/* ----------------------- */
+
+.bg-img {
+    width: 100vw;
+    height: 50vh;
+    background-image: linear-gradient(#2218061a, #3122061e), url('../img/img4.png');
+    background-size: cover;
+    background-position: left 15% bottom 60%;
+    background-repeat: no-repeat;
+}
+
+/* --------------------- */
+/* SECTION: OUR SERVICES */
+/* --------------------- */
+
+.boxes {
+    margin-bottom: 60px;
+    text-align: center;
+}
+/* Using flex for Info Cards*/
+.boxes .container {
+    display: flex;
+    flex-direction: row;
+}
+.box {
+    flex: 1;
+    background: var(--color-hotchocolate);
+    color: var(--color-cream-lt);
+    border-radius: 10px;
+    margin: 20px 10px;
+    box-shadow: 0 5px 10px #1619253b;
+    padding: 5px 30px;
+    transition: 0.3s ease-out;
+}
+.box:hover{
+    transform: scale(105%);
+}
+.box h5 {
+    margin: 15px 0;
+}
+.box p {
+    margin-bottom: 20px;
+    line-height: 1.6;
+}
+
+/* ----------------------- */
+/* SECTION: RESPONSIVE IMAGE */
+/* ----------------------- */
+.resp-img{
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+}
+.resp-img img{
+    transform: translate(0%, -25%);
+}
+
+/* ----------------------- */
+/* SECTION: CONTACT FORM */
+/* ----------------------- */
+
+.section-contact {
+    text-align: center;
+    margin-bottom: 70px;
+}
+.contact {
+    margin: 30px auto;
+    width: 500px;
+}
+fieldset {
+    border: none;
+    margin: 0 0 10px;
+    min-width: 100%;
+    padding: 0;
+    width: 100%;
+}
+.contact input[type="text"],
+.contact input[type="email"],
+.contact input[type="tel"],
+.contact textarea {
+    width: 100%;
+    padding: 15px;
+    margin: 0 0 5px;
+    border-radius: 10px;
+    border: 2px solid var(--color-cream);
+}
+textarea {
+    font-family: 'Raleway', sans-serif;
+}
+.contact textarea {
+    height: 200px;
+    max-width: 100%;
+    resize: none;
+}
+.contact button[type="submit"] {
+    cursor: pointer;
+    width: 100%;
+    border: none;
+    border-radius: 20px;
+    margin: 0 0 5px;
+    padding: 20px;
+    background: var(--color-frenchvanilla);
+    color: var(--color-cream-lt);
+    font-size: 16px;
+    transition: all .2s ease-out;
+}
+.contact button[type="submit"]:hover {
+    background-color: var(--color-hotchocolate);
+}
+
+/* ------------------- */
+/* SECTION: COLLECTION */
+/* ------------------- */
+
+.collection h4{
+    text-align: center;
+    margin-top: 50px;
+}
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    padding: 10px;
+    margin: 30px auto;
+}
+.grid-item {
+    background-color: var(--color-hotchocolate);
+    color: var(--color-cream-lt);
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    transition: 0.3s ease-out;
+    line-height: 1.6;
+}.grid-item:hover{
+    transform: scale(105%);
+}
+.grid-item img{
+    max-width: 200px;
+}
+.grid-item h5{
+    padding-bottom: 10px;
+}
+
+/* -------------- */
+/* SECTION: STORES */
+/* -------------- */
+
+.stores {
+    text-align: center;
+}
+.store-p {
+    padding: 20px 20%;
+    line-height: 1.6;
+}
+.store-p a{
+    background-color: var(--color-coffee);
+    padding: 5px;
+}
+.stores p{
+    margin-bottom: 10px;
+}
+.stores a{
+    text-decoration: none;
+    color: var(--color-cream-lt);
+    border-bottom: 1px solid var(--color-cream);
+    cursor: alias;
+    margin-bottom: 20px;
+}
+
+/* 
+Name: Chirag Parmar, Suparno Karmakar, Nidhi Padsala
+ARSD: Nautilus
+*/

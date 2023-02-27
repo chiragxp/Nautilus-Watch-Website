@@ -1,0 +1,53 @@
+@import url(desktop.css);
+.header .container {
+    flex-direction: column;
+    padding-top: 20px;
+    text-align: center;
+}
+.header img {
+    margin-right: 0;
+}
+.navbar .container {
+    padding: 0 50px;
+}
+
+.bg-img {
+    height: 40vh;
+    background-image: linear-gradient(#2218061a, #3122061e), url('../img/img8.png');
+    background-position: left 15% bottom 40%;
+}
+
+.boxes .container {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+}
+
+.resp-img{
+    width: 100vw;
+    height: 40vh;
+    overflow: hidden;
+}
+.resp-img img{
+    transform: translate(0%, -15%);
+}
+
+.contact {
+    width: 70%
+}
+
+.generic-text p {
+    padding: 0 40px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    padding: 10px;
+}
+
+
+/* 
+Name: Chirag Parmar, Suparno Karmakar, Nidhi Padsala
+ARSD: Nautilus
+*/

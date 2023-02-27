@@ -1,0 +1,67 @@
+/* Importing Desktop CSS */
+@import url(desktop.css);
+
+.container{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+.header .container {
+    flex-direction: column;
+    padding-top: 0px;
+    text-align: center;
+}
+.header img {
+    margin-right: 0;
+}
+
+.boxes .container {
+    display: block;
+    text-align: center;
+}
+
+.resp-img{
+    width: 100vw;
+    height: 20vh;
+    overflow: hidden;
+}
+.resp-img img{
+    transform: translate(0%, -22%);
+}
+
+.contact {
+    width: 90%
+}
+
+.generic-text h4 {
+    padding: 0 10px;
+}
+.generic-text p {
+    padding: 0 20px;
+}
+
+.bg-img {
+    height: 70vh;
+    background-image: linear-gradient(#2218061a, #3122061e), url('../img/img9.png');
+    background-position: left 15% bottom 40%;
+}
+
+.navbar .container {
+    display: flex;
+    flex-direction: column;
+}
+
+.navbar {
+    padding-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto;
+    padding: 10px;
+    margin: 10px auto;
+}
+
+/* 
+Name: Chirag Parmar, Suparno Karmakar, Nidhi Padsala
+ARSD: Nautilus
+*/
